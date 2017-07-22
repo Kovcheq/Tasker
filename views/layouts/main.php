@@ -56,10 +56,14 @@ AppAsset::register($this);
                 'active' => false,
             ],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Войти', 'url' => ['/site/login']]
+                [
+                'label' => 'Войти', 
+                'url' => ['/site/login'],
+                'active' => false,
+                ]
             ) : (
                 '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
+                . Html::beginForm(['/site/logout'], 'post', ['class' => 'text-center'])
                 . Html::submitButton(
                     'Выйти',
                     ['class' => 'btn btn-inverse btn-a logout']
@@ -85,7 +89,11 @@ AppAsset::register($this);
     
     <footer class="text-center">
         <div class="container">
-            <a href="https://vk.com/id96251144" target="_blank">Cделано с любовью и трепетом &copy; 2017 by Kovcheq</a>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="https://vk.com/id96251144" target="_blank">Cделано с любовью и трепетом &copy; 2017 by Kovcheq</a>
+                </div>
+            </div>
         </div>
     </footer>
 <?php $this->endBody() ?> 

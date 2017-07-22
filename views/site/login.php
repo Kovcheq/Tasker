@@ -16,7 +16,7 @@ $this->title = 'Авторизация';
                             ]
                         ]); ?>
                     <h2>Авторизация</h2>
-                        <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'class' => 'btn input-xl'])->label(false) ?>
+                        <?= $form->field($model, 'username')->textInput(['class' => 'btn input-xl'])->label(false) ?>
                         <?= $form->field($model, 'password')->passwordInput(['class' => 'btn input-xl'])->label(false) ?>
                         <div class="form-group">
                             <?= Html::submitButton('Войти', ['class' => 'btn btn-md', 'name' => 'login-button']) ?>
