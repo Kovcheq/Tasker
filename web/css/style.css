@@ -1,0 +1,448 @@
+    /*Animation*/
+@keyframes move-bottom {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.up-down-animation {
+     animation: move-bottom 1.05s infinite ease-in-out;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: 900;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+h4 {
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+.p0 {
+    padding: 0;
+    margin: 0
+}
+
+.p0_bottom {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 10px;
+    line-height: 1.63em;
+    padding-bottom: 10px;
+    
+}
+nav + section{
+    padding-top: 50px;
+}
+
+.section-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: #ABF000;
+    transition: .25s ease-out;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #ABF000;
+}
+
+       /* Table*/
+.table-hover>tbody>tr:hover {
+    background: #c5ed62;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    line-height: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+        /*End table*/
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.text-primary {
+    color: #ABF000;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.shown {
+    visibility: visible;
+}
+
+.form_shadow {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px gray;
+}
+::-moz-selection {
+  background: #e0f0b7; 
+}
+
+::selection {
+  background: #c5ed62;
+}
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+}
+
+::-webkit-scrollbar-track {
+    background-color:#e0f0b7;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#ABF000;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#ABF000;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+    /* Button*/
+
+
+.btn {
+    font-family: 'Roboto';
+    font-size: 14px;
+    transition: .25s ease-out;
+    border: 2px solid #ABF000;
+    color: #ABF000;
+    margin: 10px;
+    background: inherit;
+}
+
+
+
+.btn:focus,
+.btn:hover {
+    background: #ABF000;
+    outline: none;
+    outline-offset: 0;
+    color: white;
+    transform: scale(1.1)
+}
+
+.btn::placeholder {
+    color: #ABF000;
+}
+
+.btn:focus::placeholder,
+.btn:hover::placeholder {
+    color: white;
+}
+.btn-inverse {
+    color: white;
+    background: #ABF000;
+    border: 2px solid white;
+}
+
+.btn-inverse:focus,
+.btn-inverse:hover {
+    color: #ABF000;
+    background: white;
+}
+
+.btn-a {
+    border: none;
+    padding: 5px;
+}
+.input-xl,
+.btn-xl {
+    font-size: 20px;
+    padding: 16px;
+    margin-top: 10px;
+}
+
+.input-md, 
+.btn-md {
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.input-sm,
+.btn-sm {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn-circle {
+    width: 160px;
+    height: 160px;
+    line-height: 80px;
+    vertical-align: middle;
+    font-size: 36px;
+    padding: 40px;
+    border-radius: 80px;
+}
+
+.input-full {
+    width: calc(100% - 40px);
+    line-height: 3em;
+}
+
+
+.form-group label {
+    display: block;
+}
+    /* Navigation */
+#mainNav {
+    font-size: 18px;
+}
+.mainNav {
+    background: #ABF000;
+}
+.mainNav_home {
+    background: rgba(171, 240, 0, 0);
+}
+
+.navbar-default {
+    border: none;
+}
+
+.nav {
+    overflow: hidden;
+}
+/* Header*/
+
+header {
+    padding-top: 50px;
+    background-image: url(../img/header-1920x1200.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.intro-text {
+    padding: 200px 200px 300px;
+    font-family: 'Roboto';
+}
+
+.intro-lead-in {
+    font-size: 26px;
+}
+
+.intro-heading {
+    font-size: 28px;
+    font-weight: 700
+}
+
+header .btn {
+    color: white;
+    border-color: white;
+    margin-top: 35px;
+    background: inherit;
+}
+header .btn::placeholder {
+    color: white;
+}
+
+header .btn:focus::placeholder,
+header .btn:hover::placeholder {
+    color: black;
+}
+
+header .btn:focus,
+header .btn:hover {
+    color: black;
+    background: white;
+}
+
+.page-scrol {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a, 
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand{
+    color: white;
+    transition: .25s ease-out;
+    
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script";
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default a.active {
+    color: white;
+    border-bottom: 5px solid white;
+    padding-bottom: 10px;
+    background: inherit;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: white;
+}
+.drow {
+    display: block;
+    width: 28px;
+    height: 15px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-photo {
+    height: 40px;
+    width: 40px;
+    transition: .25s ease-out;
+}
+
+.user-photo img {
+    height: 40px;
+    width: 40px;
+    margin: 5px 10px;
+    border-radius: 50%;
+}
+
+.user-photo:hover img{
+    border: 2px solid white;
+}
+
+    /* Scrool-up */
+#scroll-up {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    transition: .25s ease-out;
+}
+
+.scroll-up {
+    opacity: 0;
+}
+.scroll-up_show {
+    opacity: 1;
+}
+#scroll-up:hover {
+    transform: scale(1.05);
+}
+    /*Footer*/ 
+footer {
+    margin: 20px 0;
+}
+
+    /*WORK PAGE*/
+    /* Log in */
+#log-in {
+    background: #ABF000;
+    color: white;
+    font-size: 18px;
+}
+
+    /* Advantages*/
+.advantage {
+    transition: 0.25s ease-out;
+    padding: 10px 15px;
+    min-height: 240px;
+}
+
+.advantage:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+.fa-stack  {
+    transition: 1s ease-out;
+}
+
+.advantage:hover .fa-stack  {
+    transform: rotate(360deg)
+}
+
+
+    /*Tasks*/ 
+
+.task {
+    padding: 20px;
+}
+tr .icon {
+    color: gray;
+    transition: 0s;
+}
+
+
+.task-name {
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.task-description {
+    font-size: 24px;
+    padding: 5px 0;
+}

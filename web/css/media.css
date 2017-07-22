@@ -1,0 +1,129 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    }
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .navbar-default .navbar-nav>li>a, 
+        .navbar-default .navbar-nav>li>a {
+            padding: 15px 5px;
+        }
+        .intro-text {
+            padding-right:  50px;
+            padding-left:  50px;
+        }
+        tr .icon {
+            opacity: 1;
+        }
+    }
+
+    
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 768px) { 
+
+        .intro-lead-in {
+            font-size: 24px;
+        }
+        .intro-heading  {
+            font-size: 28px;
+        }
+        .scroll-up {
+            bottom: 10px;
+            right: 0;
+        }
+        #sign-in {
+            font-size: 16px;
+        }
+        .advantage {
+            padding: 20px 25px;
+        }
+        
+    }
+
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+         body {
+            font-size: 16px;
+        }   
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+        
+        h4 {
+            font-size: 24px;
+            padding: 15px 0;
+        }
+        p {
+            font-size: 16px;
+        }
+        
+        .navbar-default .navbar-toggle:focus, 
+        .navbar-default .navbar-toggle:hover, 
+        .navbar-default .navbar-toggle {
+            color: white;
+            background: #FF8700;
+            border: none;
+        } 
+        .mainNav_home  .navbar-toggle {
+            background: rgba(255, 135, 0, 0);
+        }
+        
+        .navbar-default .navbar-nav>li>a:focus, 
+        .navbar-default .navbar-nav>li>a:hover 
+        .navbar-default .navbar-nav>li>a,
+        a .active {
+            border: none;
+            text-align: center;
+        }
+        .navbar-default .navbar-nav>li>a.active, 
+        .navbar-default .navbar-nav>li>a {
+            text-align: center;
+            border: none;
+            padding-bottom: 15px;
+        }
+        
+        .intro-text {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+        .navbar-brand {
+            padding-top: 20px;
+        }
+        .intro-text {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .intro-lead-in {
+            font-size: 22px;
+        }
+        .intro-heading  {
+            font-size: 26px;
+        }
+        #menu {
+            background: #FF8700;
+        }
+        
+        .navbar-default .navbar-nav>li>a:hover,
+        .navbar-default a.active {
+            border-bottom: none;
+            padding-bottom: 15px;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    }
